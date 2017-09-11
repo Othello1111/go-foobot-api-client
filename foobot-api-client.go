@@ -112,9 +112,9 @@ func main() {
 
 	//*******************REMOVE BELOW DEBUGGING PRINTLN STATEMENTS
 	
-		log.Println("URL: ", url)
-		log.Println("Current Epoch Time: ", currentEpoch)
-		log.Println("UUID: ", foobot.UUID)
+		log.Println("Called API URL: ", url)
+		//log.Println("Current Epoch Time: ", currentEpoch)
+		//log.Println("UUID: ", foobot.UUID)
 		log.Println("Start time: ", time.Unix(int64(foobot.Start),0))
 		log.Println("End time: ", time.Unix(int64(foobot.End),0))
 		log.Println("Datapoints Array Length: ", len(foobot.Datapoints))

@@ -15,4 +15,6 @@ This is currently a work in progress.... more to come.
 
 ## To-Do
 
- - [ ] 
+ - [ ] Further separate into additional functions besides main()
+ - [ ] Automate table creation after database is instantiated
+ - [ ] Firm up logging
