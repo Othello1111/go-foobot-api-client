@@ -3,12 +3,18 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 )
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello world")
-	})
+	http.HandleFunc("/", hello)
+	fmt.Println("listening...")
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	if err != nil {
+		panic(err)
+	}
+}
 
-	http.ListenAndServe(":80", nil)
+func hello(res http.ResponseWriter, req *http.Request) {
+	fmt.Fprintln(res, "Hello, world")
 }
