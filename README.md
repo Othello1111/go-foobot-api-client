@@ -15,9 +15,9 @@ This is currently a work in progress.... more to come.
 
 ## To-Do
 
- - [ ] Figure out web worker process crash on deploy 
- - [ ] Create Procfile & change dyno type?
- - [ ] Add scheduler config to terraform deployment?
+ - [x] Figure out web worker process crash on deploy 
+ - [x] Create Procfile & change dyno type?
+ - [ ] Add scheduler config to terraform deployment / app.json?
  - [ ] Further separate into additional functions besides main()
- - [ ] Automate table creation after database is instantiated
- - [ ] Firm up logging
+ - [ ] Automate table creation after database is instantiated (app.json post-deployment script? 'release' phase of Procfile?)
+ - [ ] Tighten up logging
