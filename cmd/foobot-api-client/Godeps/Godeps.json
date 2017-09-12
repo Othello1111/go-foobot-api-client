@@ -1,7 +1,10 @@
 {
-	"ImportPath": "github.com/clayshek/go-foobot-api-client",
+	"ImportPath": "github.com/clayshek/go-foobot-api-client/cmd/foobot-api-client",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/lib/pq",
