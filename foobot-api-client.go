@@ -79,7 +79,7 @@ func main() {
 	currentEpoch := time.Now().Unix()
 	//*******************ADD LOGGING ENTRIES FOR START & CURRENT EPOCHS USED, or just log the URL
 
-	url := fmt.Sprintf("https://api.foobot.io/v2/device/%v/datapoint/%v/%v/0/", fooDeviceUUID, startEpoch, currentEpoch)
+	url := fmt.Sprintf("https://api.foobot.io/v2/device/%v/datapoint/%v/%v/3600/", fooDeviceUUID, startEpoch, currentEpoch)
 
 	foobotClient := http.Client{
 		Timeout: time.Second * 10, // Maximum of 10 secs
