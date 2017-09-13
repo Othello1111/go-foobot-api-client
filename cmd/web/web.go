@@ -25,6 +25,10 @@ type FooData struct {
 func main() {
 	http.HandleFunc("/", index)
 	//http.HandleFunc("/foo", foo)
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	//http.HandleFunc("/static/", func(w http.ResponseWriter, r *http.Request) {
+//		http.ServeFile(w, r, r.URL.Path[1:])
+//	})
 	fmt.Println("listening...")
 	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
 	if err != nil {

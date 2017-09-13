@@ -1,9 +1,14 @@
 <html>
 {{ template "header" }}
 <body>
-    <h1>FooBot Indoor Air Quality Metrics:</h1>
+    <div class="container-fluid bg-1 text-center">
+    <h1><a href="https://foobot.io/">FooBot</a> Indoor Air Quality Metrics:</h1>
 
-    <table border=1>
+    <h3><a href="https://github.com/clayshek/go-foobot-api-client" target="_blank" class="fa fa-github">   https://github.com/clayshek/go-foobot-api-client</a></h3>
+    <h6>This site a work in progress...</h6>
+    <br>
+    <table class="table table-bordered table-sm">
+        <thead class="thead-inverse">
             <tr>
                 <th>Datetime</th>  
                 <th>Seconds Since Epoch</th>
@@ -13,7 +18,8 @@
                 <th>CO2 (PPM)</th>
                 <th>VOC (PPB)</th>
                 <th>Pollution Score</th>
-            </tr>        
+            </tr>    
+        </thead>    
         {{range .}}
             <tr>
                 <td>{{.Datetime}}</td>
@@ -27,6 +33,6 @@
             </tr>
         {{end}}
     </table>
-
+    </div>
 </body>
 </html>

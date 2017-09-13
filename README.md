@@ -1,7 +1,9 @@
 # go-foobot-api-client
-Go(lang) API client for FooBot air quality monitor, logs to database. 
+Go(lang) API client for <a href="https://foobot.io/">FooBot</a> air quality monitor, logs to database. 
 
 This is currently a work in progress.... more to come.
+
+Deployed as a WIP to <a href="http://airquality.clayshekleton.com/">http://airquality.clayshekleton.com/</a>
 
 ## Requirements
 
