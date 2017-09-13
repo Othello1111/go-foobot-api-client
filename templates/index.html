@@ -1,0 +1,32 @@
+<html>
+{{ template "header" }}
+<body>
+    <h1>FooBot Indoor Air Quality Metrics:</h1>
+
+    <table border=1>
+            <tr>
+                <th>Datetime</th>  
+                <th>Seconds Since Epoch</th>
+                <th>Particles (ugm3)</th>
+                <th>Temp (Cel)</th>
+                <th>Humidity %</th>
+                <th>CO2 (PPM)</th>
+                <th>VOC (PPB)</th>
+                <th>Pollution Score</th>
+            </tr>        
+        {{range .}}
+            <tr>
+                <td>{{.Datetime}}</td>
+                <td>{{.Seconds_since_epoch}}</td>
+                <td>{{.Particles_ugm3}}</td>
+                <td>{{.Temp_c}}</td>
+                <td>{{.Humidity_perct}}</td>
+                <td>{{.Co2_ppm}}</td>
+                <td>{{.Voc_ppb}}</td>
+                <td>{{.Pollution_score}}</td>
+            </tr>
+        {{end}}
+    </table>
+
+</body>
+</html>

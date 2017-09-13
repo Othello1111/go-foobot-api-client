@@ -19,5 +19,6 @@ This is currently a work in progress.... more to come.
  - [x] Create Procfile & change dyno type?
  - [ ] Add scheduler config to terraform deployment / app.json?
  - [ ] Further separate into additional functions besides main()
- - [ ] Automate table creation after database is instantiated (app.json post-deployment script? 'release' phase of Procfile?)
+ - [ ] Automate table creation after database is instantiated (app.json post-deployment script? 'release' phase of Procfile?). Update SQL to create if not exists.
  - [ ] Tighten up logging
+ - [ ] Implement OAuth
